@@ -1,8 +1,16 @@
 body {
-    font-family: 'Roboro,sans-serif';
+    font-family: 'Roboto';
     color: #333;
 }
 img{
     max-width: 100%;
     height: auto;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+a{
+    color :$orange;
 }

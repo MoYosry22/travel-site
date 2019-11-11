@@ -452,6 +452,7 @@ template {
 
 .large-hero{
     position: relative;
+    border-bottom: 10px solid #2f5572;
 }
 
 .large-hero__text-content{
@@ -464,24 +465,44 @@ template {
         text-align: center;
     }
 
+.large-hero__image{
+        display: block;
+    }
+
 .large-hero__title{
         color:#2f5572;
         font-weight: 300;
-        font-size: 4.8rem;
+        font-size: 2.4rem;
         margin: 0;
+    }
+
+@media(min-width: 530px){
+
+.large-hero__title{
+            font-size: 4.8rem
+    }
     }
 
 .large-hero__subtitle{
         color: #2f5572;
         font-weight: 300;
-        font-size: 2.9rem;
+        font-size: 1.5rem;
         margin: 0;
+
+    }
+
+@media(min-width: 530px){
+
+.large-hero__subtitle{
+            font-size: 2.9rem
+
+    }
     }
 
 .large-hero__desc{
         color: #fff;
         font-weight: 100;
-        font-size: 1.875rem;
+        font-size: 1.1rem;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.1) ;
         max-width: 30rem;
         text-align: center;
@@ -489,14 +510,30 @@ template {
         margin-right: auto;
     }
 
+@media(min-width: 530px){
+
+.large-hero__desc{
+            font-size: 1.875rem
+    }
+    }
+
 body {
-    font-family: 'Roboro,sans-serif';
+    font-family: 'Roboto';
     color: #333;
 }
 
 img{
     max-width: 100%;
     height: auto;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a{
+    color :#d59541;
 }
 
 .btn{
@@ -511,6 +548,177 @@ img{
     }
 
 .btn--large{
-        font-size: 1.25rem;
+
         padding: 1.1rem 1.9rem;
+    
+    }
+
+@media(min-width: 530px){
+
+.btn--large{
+            font-size: 1.25rem
+    
+    }
+    }
+
+.wrapper{
+    padding-left:18px ;
+    padding-right:18px ;
+    max-width: 1263px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.wrapper--narrower{
+        max-width: 976px;
+    }
+
+.wrapper--b-margin{
+        margin-bottom:1rem;
+    }
+
+@media(min-width: 530px){
+
+.wrapper--b-margin{
+            margin-bottom: 3.875rem
+    }
+    }
+
+.wrapper .wrapper{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+.page-section{
+    padding: 1.2rem 0;
+}
+
+@media(min-width: 800px){
+
+.page-section{
+        padding: 4.5rem 0 
+}
+    }
+
+.page-section--blue{
+        background-color: #2f5572;
+        color: #fff;
+    }
+
+.headline{
+    font-weight: 300;
+    font-size: 1.9rem;
+    color: #2f5572;
+}
+
+@media(min-width: 530px){
+
+.headline{
+        font-size: 2.875rem
+}
+    }
+
+.headline--centered{
+        text-align: center;
+    }
+
+.headline--orange{
+        color: #d59541;
+    }
+
+.headline--small{
+        font-size: 1.2rem;
+    }
+
+@media(min-width: 530px){
+
+.headline--small{
+            font-size: 1.875rem
+    }
+    }
+
+.headline--narrwo{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.headline--light{
+        font-weight: 100;
+    }
+
+.headline--b-margin-small{
+        margin-bottom: 0.5em;   
+     }
+
+.headline--b-margin-large{
+        margin-bottom: 1.6em;
+    }
+
+.headline strong{
+        font-weight: 400;
+    }
+
+.headline--no-t-margin{
+        margin-top: 0;
+    }
+
+.row::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+
+@media(min-width: 800px){
+       
+       .row__medium-4{
+           float: left;
+           width: 33.333%;
+       }
+       .row__medium-4--larger{
+           width: 37%;
+       }
+       .row__medium-8{
+           float: left;
+           width: 66.666%;
+       }
+       .row__medium-8--smaller{
+        width: 63%;
+       }
+       .row__b-margin-till-medium{
+           margin-bottom: 0;
+       }
+    }
+
+.row--gutters > div{
+        padding-right: 65px;
+       
+    }
+
+.row--gutters{
+        margin-right: -65px;
+    }
+
+.row__b-margin-till-medium{
+        margin-bottom: 1rem;
+    }
+
+.content-container p{
+        line-height: 1.65;
+        margin: 1.8rem 0;
+     
+    }
+
+@media(min-width: 530px){
+
+.content-container p{
+            font-size: 1.125rem
+     
+    }
+    }
+
+.content-container p a {
+        font-weight: 700;
+       
     }

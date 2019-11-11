@@ -1,6 +1,6 @@
 .large-hero{
     position: relative;
-
+    border-bottom: 10px solid $mainblue;
     &__text-content{
         position: absolute;
         top: 50%;
@@ -9,27 +9,43 @@
         width: 100%;
         text-align: center;
     }
+    &__image{
+        display: block;
+    }
     &__title{
         color:$mainblue;
         font-weight: 300;
-        font-size: 4.8rem;
+        font-size: 2.4rem;
         margin: 0;
+
+    @mixin atSmall {
+            font-size: 4.8rem;
+        }
     }
+    
     &__subtitle{
         color: $mainblue;
         font-weight: 300;
-        font-size: 2.9rem;
+        font-size: 1.5rem;
         margin: 0;
+
+        @mixin atSmall {
+            font-size: 2.9rem;
+        }
+
     }
     &__desc{
         color: #fff;
         font-weight: 100;
-        font-size: 1.875rem;
+        font-size: 1.1rem;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.1) ;
         max-width: 30rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    @mixin atSmall {
+            font-size: 1.875rem;
+        }
     }
 }
 
